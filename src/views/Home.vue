@@ -1,15 +1,17 @@
 <template>
-  <hello-world />
+<div class="container">
+  <search-bar />
+</div>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+import SearchBar from "../components/SearchBar";
 
 export default {
   name: "Home",
 
   components: {
-    HelloWorld,
+    SearchBar,
   },
 };
 </script>

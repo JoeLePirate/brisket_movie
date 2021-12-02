@@ -1,0 +1,24 @@
+<template>
+<div>
+          <v-col
+      centered
+              class="d-flex"
+        cols="12"
+        sm="6">
+
+      <v-select
+        v-model="request.select"
+        dense
+        single-line
+        :items="items"
+      ></v-select>
+      <v-text-field
+        single-line
+        dense   
+        clearable
+        label="Recherche..."
+        hide-details="auto"
+      ></v-text-field>
+      </v-col>
+</div>
+</template>
