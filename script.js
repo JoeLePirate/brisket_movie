@@ -206,72 +206,68 @@ async function getJokes() {
 //===============TMDB API Start===============//
 const genres = [
   {
-    id: 28,
-    name: "Action",
-  },
-  {
     id: 12,
     name: "Adventure",
   },
   {
-    id: 16,
-    name: "Animation",
+    id: 28,
+    name: "Action",
   },
   {
     id: 35,
     name: "Comedy",
   },
   {
-    id: 80,
-    name: "Crime",
+    id: 16,
+    name: "Animation",
   },
   {
     id: 99,
     name: "Documentary",
   },
   {
-    id: 18,
-    name: "Drama",
+    id: 80,
+    name: "Crime",
   },
   {
     id: 10751,
     name: "Family",
   },
   {
-    id: 14,
-    name: "Fantasy",
+    id: 18,
+    name: "Drama",
   },
   {
     id: 36,
     name: "History",
   },
   {
-    id: 27,
-    name: "Horror",
+    id: 14,
+    name: "Fantasy",
   },
   {
     id: 10402,
     name: "Music",
   },
   {
-    id: 9648,
-    name: "Mystery",
+    id: 27,
+    name: "Horror",
   },
   {
     id: 10749,
     name: "Romance",
   },
   {
-    id: 878,
-    name: "Science Fiction",
+    id: 9648,
+    name: "Mystery",
   },
   {
     id: 10770,
     name: "TV Movie",
   },
   {
-    id: 53,
-    name: "Thriller",
+    id: 878,
+    name: "Science Fiction",
   },
   {
     id: 10752,
@@ -280,6 +276,10 @@ const genres = [
   {
     id: 37,
     name: "Western",
+  },
+  {
+    id: 53,
+    name: "Thriller",
   },
 ];
 
@@ -478,7 +478,6 @@ function showMovies(data) {
 }
 
 const overlayContent = document.getElementById("overlay-content");
-/* Open when someone clicks on the span element */
 function openNav(movie) {
   let id = movie.id;
   fetch(BASE_URL + "/movie/" + id + "/videos?" + API_KEY)
@@ -525,7 +524,6 @@ function openNav(movie) {
     });
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
