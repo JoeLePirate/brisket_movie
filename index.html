@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Brisket Movie</title>
+  </head>
+  <body>
+    <header>
+      <div id="meteo">
+        <p id="demo">Waiting for the info...</p>
+      </div>
+      <div class="logo-container">
+        <img
+        alt="Logo"
+        class="logo-brisket"
+        src="https://cdn.discordapp.com/attachments/667756214867722260/915300183653384223/logo_brisket.png"
+        />
+      </div>
+      <div class="form">
+        <form id="form">
+          <input
+            type="text"
+            placeholder="Search..."
+            id="search"
+            class="search"
+          /><br />
+           
+          <input
+            type="radio"
+            id="movie"
+            name="search_query"
+            value="movie"
+            checked
+          />
+            <label class="search-label" for="movie">Movie</label><br />
+           
+          <input
+            type="radio"
+            id="director"
+            name="search_query"
+            value="director"
+          />
+            <label class="search-label" for="director">Director</label><br />
+        </form>
+      </div>
+    </header>
+    <div class="container">
+      <div id="jokes">
+        <h1>Dad Jokes Challenge</h1>
+        <p id="joke" class="joke"></p>
+        <button id="jokeBtn" class="btn">Another One!</button>
+      </div>
+    </div>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <div class="overlay-content" id="overlay-content"></div>
+
+      <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow"
+        >&#8656;</a
+      >
+
+      <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow"
+        >&#8658;</a
+      >
+    </div>
+    <main id="main"></main>
+    <div class="pagination">
+      <div class="page" id="prev">Previous Page</div>
+      <div class="current" id="current">1</div>
+      <div class="page" id="next">Next Page</div>
+    </div>
+
+    <div class="trivia">
+      <h2>Movie Trivia</h2>
+      <div class="questions" id="questions">
+        <p id="loading-question">Waiting for the data...</p>
+        <p class="question joke" id="question"></p>
+        <div class="trivia-btn">
+          <label class="joke"><input type="radio" name="trivia" value="true" />True</label>
+          <label class="joke"><input type="radio" name="trivia" value="false" />False</label>
+        </div>
+        <p class="trivia-result joke" id="trivia-result"></p>
+      </div>
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+        <div class="circle">5</div>
+      </div>
+      <div class="btn-wrap">
+        <button class="btn" id="trivia-prev" disabled>Prev</button>
+        <button class="btn" id="trivia-next">Next</button>
+      </div>
+
+      <button class="btn" id="trivia-new">Get fresh questions</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
